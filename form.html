@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+	<form>
+		<section class="column">
+			<label for="first-name">FIRST NAME</label>
+			<input type="text" id="first-name" placeholder="First Name">
+			<label for="last-name">LAST NAME</label>
+			<input type="text" id="last-name" placeholder="Last Name">
+			<label for="email">EMAIL ADDRESS</label>
+			<input type="email" id="email" placeholder="Email Address">
+			<label for="country">COUNTRY</label>
+			<select name="country-select" id="country">
+				<option value="" disabled selected>Choose a country:</option>
+				<option value="1">Ottoman Empire</option>
+				<option value="2">Russia</option>
+				<option value="3">Murica</option>
+			</select>
+			<label for="biography">BIOGRAPHY</label>
+			<textarea name="bio" id="biography" cols="30" rows="10"></textarea>
+		</section>
+		<section class="column">
+			<label for="phone-number">PHONE NUMBER</label>
+			<input type="number" id="phone-number" placeholder="+555-555-5555">
+			<label for="affiliations">AFFILIATIONS</label>
+			<textarea name="affiliations" id="affil" cols="30" rows="10"></textarea>
+			<label for="occupation">OCCUPATION</label>
+			<select name="occupation" id="occup">
+				<option value="" disabled selected>Choose an occupation:</option>
+				<option value="1">Bum</option>
+				<option value="2">Rock Star</option>
+				<option value="3">Televangelist</option>
+			</select>
+			<label for="cat">CAT'S NAME</label>
+			<input type="text" id="kitty" placeholder="Kitty">
+			<label for="gadget">FAVORITE GADGET</label>
+			<input type="text" id="fav-gadget" placeholder="Annoy-a-tron">
+		</section>
+		<section class="column">
+			<label for="talent">TYPE OF TALENT</label>
+			<select name="type-talent" id="talent">
+				<option value="" disabled selected>Choose a talent:</option>
+				<option value="1">Juggling</option>
+				<option value="2">Unicycling</option>
+				<option value="3">Juggling while Unicycling</option>
+			</select>
+			<label for="drink">FAVORITE DRINK</label>
+			<input type="text" id="fav-drink" placeholder="Nom, nom, nom...">
+			<label for="power">SPECIAL POWER</label>
+			<input type="text" id="spec-pow" placeholder="You has powers?">
+			<label for="weapon">WEAPON OF CHOICE</label>
+			<input type="text" id="weapon-choice" placeholder="Ze missiles...">
+			<label for="comments">COMMENTS</label>
+			<textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+		</section>
+	</form>
+</body>
+</html>
