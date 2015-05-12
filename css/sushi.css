@@ -1,0 +1,80 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+h1, p {
+	color: rgb(71, 163, 218);
+}
+
+.container {
+	width: 90%;
+	margin: 5% auto;
+	padding: 1%;
+}
+
+.column {
+	width: 30%;
+	margin: 1.5%;
+	display: inline-block;
+	vertical-align: top;
+	font-family: sans-serif;
+}
+
+.column img {
+	width: 100%;
+	margin-bottom: 1.5em;
+}
+
+.column h1 {
+	font-size: 2.5em;
+	font-weight: 700;
+	margin-bottom: .5em;
+}
+
+.column p {
+	font-size: 1.8em;
+}
+
+@media screen and (max-width: 992px) {
+
+	.column {
+		width: 100%;
+	}
+
+	.column img, .column div {
+		display: inline-block;
+		width: 45%;
+		vertical-align: top;
+	}
+	
+	.column img {
+		margin-right: 3%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+	.column {
+		width: 100%;
+		text-align: center;
+	}
+
+	.column img, .column div {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.column img {
+		margin-bottom: 7%;
+	}
+
+	.column p {
+		margin-bottom: 10%;
+	}
+
+}
