@@ -1,0 +1,213 @@
+/**********************
+General Styling
+**********************/
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+.container {
+	width: 100%;
+	padding: 5% 2%;
+	color: rgb(92, 164, 215);
+	font-family: sans-serif;
+}
+
+.column {
+	display: inline-block;
+	width: 33%;
+	padding: 2%;
+}
+
+/************************
+Shirt Box Styling
+************************/
+
+.shirt {
+	width: 100%;
+	position: relative;
+	border: 2px solid rgb(92, 164, 215);
+	border-bottom: 1px solid rgb(92,164,215);
+	padding: 3em 1em;
+}
+
+.shirt img {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	transform-style: preserve-3d;
+	transition: all 1s linear;
+}
+
+
+.shirt .fa {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	right: 0;
+	border-bottom: 2px solid rgb(92, 164, 215);
+	border-left: 2px solid rgb(92, 164, 215);
+	padding: .5em;
+}
+
+.shirt .fa:hover {
+	background-color: rgb(92, 164, 215);
+	color: white;
+	cursor: pointer;
+}
+
+/************************
+Button Styling
+************************/
+
+.choices {
+	width: 100%;
+	border: 1px solid rgb(92, 164, 215);
+	padding: 0;
+}
+
+.choices li {
+	display: inline-block;
+	width: 20%;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 1em;
+	border: 1px solid rgb(92, 164, 215);
+	margin: 0;
+	vertical-align: top;
+}
+
+.two li {
+	width: 20.001%;
+}
+
+.sizes {
+	position: absolute;
+	bottom: 0;
+	width: 25%;
+	background-color: white;
+	left: 37.37%;
+	padding: 0;
+	visibility: hidden;
+}
+
+.sizes li:first-child img {
+
+}
+
+.choices li:nth-child(3):hover .choices <
+
+.sizes li:nth-child(2), .sizes li:nth-child(3), .sizes li:last-child {
+	border-top: none;
+}
+
+.sizes li:first-child, .sizes li:nth-child(2), .sizes li:nth-child(3) {
+	border-bottom: none;
+}
+
+.arrow-down {
+	position: absolute;
+	background-color: white;
+	z-index: 999;
+	left: 37.37%;
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	
+	border-top: 10px solid rgb(92, 164, 215);
+}
+
+.choices li:nth-child(3) {
+	position: relative;
+}
+
+.choices li .color-pop-up {
+	display: inline-block;
+	height: .9em;
+	width: .9em;
+}
+
+.choices li:hover {
+	background-color: rgb(92, 164, 215);
+	color: white;
+	cursor: pointer;
+}
+
+.box1 .color-pop-up {
+	background-color: rgb(92, 164, 215);
+}
+
+.box1:hover .color-pop-up {
+	border: 2px solid white;
+}
+
+.box2 .color-pop-up {
+	background-color: rgb(224, 119, 167);
+}
+
+.box2:hover .color-pop-up {
+	border: 2px solid white;
+}
+
+.box3 .color-pop-up {
+	background-color: rgb(224, 173, 121);
+}
+
+.box3:hover .color-pop-up {
+	border: 2px solid white;
+}
+
+/*************************
+Product Info Styling
+*************************/
+
+section > p, h1 {
+	display: inline-block;
+	margin-top: 1.3em;
+	font-size: 2.1em;
+}
+
+p {
+	font-weight: 300;
+}
+
+h1 {
+	float: right;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 992px) {
+
+	.container {
+		padding: 5%;
+		margin: 0 auto;
+	}
+
+	.column {
+		width: 45%;
+		margin: 0 2.4% 0 2.4%;
+	}
+	
+}
+
+@media screen and (max-width: 780px) {
+
+	.container {
+		padding: 10%;
+	}
+
+	.column {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.shirt, .choices {
+		margin: 0 auto;
+	}
+
+}
