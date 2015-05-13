@@ -11,9 +11,10 @@ h1, p {
 }
 
 .container {
-	width: 90%;
+	/*width: 90%;*/
 	margin: 5% auto;
 	padding: 1%;
+	max-width: 1200px;
 }
 
 .column {
@@ -24,7 +25,7 @@ h1, p {
 	font-family: sans-serif;
 }
 
-.column img {
+img {
 	width: 100%;
 	margin-bottom: 1.5em;
 }
